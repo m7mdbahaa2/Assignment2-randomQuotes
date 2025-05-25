@@ -7,7 +7,7 @@ var qoutes = [
   "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.",
   "You only live once, but if you do it right, once is enough.",
 ];
-
+var stored=-100;
 function getQoute() {
   var random = Math.random();
   var index = Math.floor(random * qoutes.length);
@@ -17,7 +17,7 @@ function getQoute() {
     
 console.log(stored);
 var selected = qoutes[index];
-var stored= index;
+ stored= index;
 
   console.log(selected);
   document.getElementById("quote").innerText = selected;

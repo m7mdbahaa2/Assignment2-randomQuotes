@@ -11,7 +11,11 @@ var qoutes = [
 function getQoute() {
   var random = Math.random();
   var index = Math.floor(random * qoutes.length);
-  var selected = qoutes[index];
+  while(index==stored){
+    var index=Math.floor(random * quotes.length);}
+    
+var selected = qoutes[index];
+var stored= index;
 
   console.log(selected);
   document.getElementById("quote").innerText = selected;

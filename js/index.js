@@ -12,6 +12,7 @@ function getQoute() {
   var random = Math.random();
   var index = Math.floor(random * qoutes.length);
   while(index==stored){
+    var random = Math.random();
     var index=Math.floor(random * quotes.length);}
     
 var selected = qoutes[index];
